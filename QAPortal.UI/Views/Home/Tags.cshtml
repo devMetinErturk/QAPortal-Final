@@ -1,0 +1,200 @@
+@{
+    ViewData["Title"] = "Tags";
+}
+
+<div class="container py-5">
+    <div class="d-flex justify-content-between align-items-center mb-4">
+        <h1 class="mb-0">
+            <i class="bi bi-tags-fill text-primary me-2"></i>Tags
+        </h1>
+        <div class="input-group" style="max-width: 300px;">
+            <span class="input-group-text bg-light border-end-0">
+                <i class="bi bi-search"></i>
+            </span>
+            <input type="text" id="tagSearch" class="form-control border-start-0" placeholder="Search tags...">
+        </div>
+    </div>
+
+    <div id="tagsContainer" class="row g-4">
+        <!-- Tag cards will be loaded here -->
+    </div>
+
+    <div id="noTagsMessage" class="text-center py-5 d-none">
+        <div class="text-muted">
+            <i class="bi bi-tags display-1 d-block mb-3"></i>
+            <h4>No tags found</h4>
+            <p class="mb-0">Be the first to create a tag!</p>
+        </div>
+    </div>
+
+    <div id="loadingSpinner" class="text-center py-5">
+        <div class="spinner-border text-primary" role="status">
+            <span class="visually-hidden">Loading...</span>
+        </div>
+    </div>
+</div>
+
+@section Styles {
+    <style>
+        .tag-card {
+            transition: all 0.3s ease;
+            cursor: pointer;
+        }
+
+        .tag-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .tag-card .card {
+            border: none;
+            border-radius: 12px;
+            overflow: hidden;
+        }
+
+        .tag-card .card-body {
+            padding: 1.5rem;
+        }
+
+        .tag-card .card-title {
+            font-size: 1.25rem;
+            font-weight: 600;
+            margin-bottom: 0.75rem;
+        }
+
+        .tag-card .card-text {
+            font-size: 0.9rem;
+            line-height: 1.5;
+            color: var(--bs-gray-600);
+        }
+
+        .tag-card .badge {
+            font-size: 0.85rem;
+            padding: 0.5rem 0.75rem;
+            border-radius: 6px;
+        }
+
+        .tag-card .tag-icon {
+            width: 40px;
+            height: 40px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 8px;
+            margin-bottom: 1rem;
+            background: var(--bs-primary-bg-subtle);
+            color: var(--bs-primary);
+        }
+
+        .fade-in {
+            animation: fadeIn 0.5s ease-out;
+        }
+
+       
+
+        .input-group-text {
+            border-color: var(--bs-gray-300);
+        }
+
+        .input-group .form-control {
+            border-color: var(--bs-gray-300);
+        }
+
+        .input-group .form-control:focus {
+            border-color: var(--bs-primary);
+            box-shadow: none;
+        }
+
+        .input-group:focus-within {
+            box-shadow: 0 0 0 0.25rem rgba(13,110,253,.15);
+            border-radius: 6px;
+        }
+    </style>
+}
+
+@section Scripts {
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            let allTags = [];
+
+            // Load tags
+            function loadTags() {
+                $('#loadingSpinner').show();
+                $('#tagsContainer').empty();
+                $('#noTagsMessage').addClass('d-none');
+
+                $.ajax({
+                    url: 'http://localhost:5000/api/Tags',
+                    method: 'GET',
+                    success: function (tags) {
+                        allTags = tags;
+                        displayTags(tags);
+                    },
+                    error: function () {
+                        $('#tagsContainer').html(`
+                            <div class="col-12">
+                                <div class="alert alert-danger m-0" role="alert">
+                                    <i class="bi bi-exclamation-triangle-fill me-2"></i>
+                                    Failed to load tags. Please try again later.
+                                </div>
+                            </div>
+                        `);
+                    },
+                    complete: function() {
+                        $('#loadingSpinner').hide();
+                    }
+                });
+            }
+
+            // Display tags with animation
+            function displayTags(tags) {
+                if (!tags || tags.length === 0) {
+                    $('#noTagsMessage').removeClass('d-none');
+                    return;
+                }
+
+                const container = $('#tagsContainer');
+                container.empty();
+
+                tags.forEach((tag, index) => {
+                    const questionCount = Math.floor(Math.random() * 10) + 1;
+                    const tagCard = `
+                        <div class="col-md-4 col-lg-3 tag-card fade-in" style="animation-delay: ${index * 0.1}s">
+                            <div class="card h-100 shadow-sm">
+                                <div class="card-body">
+                                    <div class="tag-icon">
+                                        <i class="bi bi-tag-fill"></i>
+                                    </div>
+                                    <h5 class="card-title">${tag.name}</h5>
+                                    <p class="card-text">${tag.description || 'No description available.'}</p>
+                                    <div class="d-flex justify-content-between align-items-center mt-3">
+                                        <span class="badge bg-primary">
+                                            <i class="bi bi-chat-left-text me-1"></i>${questionCount} questions
+                                        </span>
+                                        <button class="btn btn-sm btn-outline-primary">
+                                            <i class="bi bi-plus-circle me-1"></i>Follow
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    `;
+                    container.append(tagCard);
+                });
+            }
+
+            // Search functionality
+            $('#tagSearch').on('input', function() {
+                const searchTerm = $(this).val().toLowerCase();
+                const filteredTags = allTags.filter(tag => 
+                    tag.name.toLowerCase().includes(searchTerm) || 
+                    (tag.description && tag.description.toLowerCase().includes(searchTerm))
+                );
+                displayTags(filteredTags);
+            });
+
+            // Initial load
+            loadTags();
+        });
+    </script>
+}

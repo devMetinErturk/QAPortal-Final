@@ -1,0 +1,150 @@
+@{
+    ViewData["Title"] = "Login";
+}
+
+<div class="container py-5">
+    <div class="row justify-content-center">
+        <div class="col-md-6 col-lg-5">
+            <div class="card shadow-lg border-0 rounded-lg fade-in">
+                <div class="card-header bg-primary text-white text-center py-4">
+                    <h3 class="mb-0 fw-bold">
+                        <i class="bi bi-box-arrow-in-right me-2"></i>Login
+                    </h3>
+                </div>
+                <div class="card-body p-4">
+                    <form id="loginForm" class="needs-validation" novalidate>
+                        <div class="form-floating mb-3">
+                            <input type="email" class="form-control" id="email" placeholder="name@example.com" required>
+                            <label for="email">Email address</label>
+                            <div class="invalid-feedback">
+                                Please enter a valid email address.
+                            </div>
+                        </div>
+                        <div class="form-floating mb-4">
+                            <input type="password" class="form-control" id="password" placeholder="Password" required>
+                            <label for="password">Password</label>
+                            <div class="invalid-feedback">
+                                Please enter your password.
+                            </div>
+                        </div>
+                        <div class="d-grid">
+                            <button type="submit" class="btn btn-primary btn-lg">
+                                <i class="bi bi-box-arrow-in-right me-2"></i>Login
+                            </button>
+                        </div>
+                    </form>
+                </div>
+                <div class="card-footer text-center py-3">
+                    <div class="small">
+                        <a asp-controller="Account" asp-action="Register" class="text-decoration-none">
+                            Need an account? Sign up!
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div id="error" class="alert alert-danger mt-3 fade-in" style="display:none;" role="alert">
+                <i class="bi bi-exclamation-triangle-fill me-2"></i>
+                <span id="errorMessage"></span>
+            </div>
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+        // Form validation
+        (function () {
+            'use strict'
+            const forms = document.querySelectorAll('.needs-validation')
+            Array.from(forms).forEach(form => {
+                form.addEventListener('submit', event => {
+                    if (!form.checkValidity()) {
+                        event.preventDefault()
+                        event.stopPropagation()
+                    }
+                    form.classList.add('was-validated')
+                }, false)
+            })
+        })()
+
+        $('#loginForm').on('submit', function (e) {
+            e.preventDefault();
+
+            const loginData = {
+                email: $('#email').val(),
+                password: $('#password').val()
+            };
+
+            // Show loading state
+            const submitBtn = $(this).find('button[type="submit"]');
+            const originalBtnText = submitBtn.html();
+            submitBtn.html('<span class="spinner-border spinner-border-sm me-2" role="status" aria-hidden="true"></span>Logging in...');
+            submitBtn.prop('disabled', true);
+
+            $.ajax({
+                url: 'http://localhost:5000/api/User/login',
+                type: 'POST',
+                contentType: 'application/json',
+                data: JSON.stringify(loginData),
+                success: function (response) {
+                    localStorage.setItem('token', response.token);
+                    localStorage.setItem('userName', response.userName);
+                    localStorage.setItem('email', response.email);
+                    localStorage.setItem('roles', JSON.stringify(response.roles));
+
+                    // Show success message before redirect
+                    const successAlert = $('<div class="alert alert-success mt-3 fade-in" role="alert">')
+                        .html('<i class="bi bi-check-circle-fill me-2"></i>Login successful! Redirecting...')
+                        .insertAfter('#loginForm');
+                    
+                    setTimeout(() => {
+                        window.location.href = '/Home/Index';
+                    }, 1000);
+                },
+                error: function () {
+                    $('#error').show();
+                    $('#errorMessage').text('Login failed. Please check your credentials.');
+                    
+                    // Reset button state
+                    submitBtn.html(originalBtnText);
+                    submitBtn.prop('disabled', false);
+                }
+            });
+        });
+    </script>
+}
+
+<style>
+    .form-floating > .form-control:focus ~ label,
+    .form-floating > .form-control:not(:placeholder-shown) ~ label {
+        color: var(--bs-primary);
+    }
+
+    .card {
+        transition: transform 0.3s ease;
+    }
+
+    .card:hover {
+        transform: translateY(-5px);
+    }
+
+    .btn-primary {
+        transition: all 0.3s ease;
+    }
+
+    .btn-primary:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 4px 8px rgba(13,110,253,.3);
+    }
+
+    .alert {
+        transition: all 0.3s ease;
+    }
+
+    .fade-in {
+        animation: fadeIn 0.5s ease-out;
+    }
+
+    
+</style>

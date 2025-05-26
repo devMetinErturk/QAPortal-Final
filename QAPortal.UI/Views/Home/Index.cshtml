@@ -1,0 +1,106 @@
+﻿@{
+    ViewData["Title"] = "Home";
+}
+
+<div class="container">
+    <div class="row align-items-center py-5 min-vh-75">
+        <div class="col-md-6 fade-in">
+            <h1 class="display-4 mb-4 text-primary fw-bold">
+                <i class="bi bi-house-door-fill me-2"></i>Welcome to QAPortal
+            </h1>
+            <p class="lead mb-4 text-muted lh-lg">
+                Your one-stop platform for asking questions, sharing knowledge, and connecting with experts.
+                Join our community today and start exploring!
+            </p>
+            <div class="d-grid gap-3 d-md-flex">
+                <a asp-controller="Home" asp-action="Questions" class="btn btn-primary btn-lg px-4 me-md-2">
+                    <i class="bi bi-chat-dots me-1"></i> Browse Questions
+                </a>
+                <a asp-controller="Home" asp-action="Tags" class="btn btn-outline-primary btn-lg px-4">
+                    <i class="bi bi-tags me-1"></i> Explore Tags
+                </a>
+            </div>
+        </div>
+        <div class="col-md-6 text-center fade-in" style="animation-delay: 0.2s;">
+            <img src="~/images/qa-illustration.svg" alt="Q&A Illustration" class="img-fluid floating" style="max-height: 300px;" />
+        </div>
+    </div>
+
+    <div class="row mt-5 g-4">
+        <div class="col-md-4 fade-in" style="animation-delay: 0.3s;">
+            <div class="card h-100 shadow-sm hover-card">
+                <div class="card-body text-center p-4">
+                    <div class="feature-icon bg-primary bg-gradient text-white rounded-circle mb-3">
+                        <i class="bi bi-question-circle display-6"></i>
+                    </div>
+                    <h3 class="card-title h4">Ask Questions</h3>
+                    <p class="card-text text-muted">Get answers from our community of experts and enthusiasts.</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4 fade-in" style="animation-delay: 0.4s;">
+            <div class="card h-100 shadow-sm hover-card">
+                <div class="card-body text-center p-4">
+                    <div class="feature-icon bg-warning bg-gradient text-white rounded-circle mb-3">
+                        <i class="bi bi-lightbulb display-6"></i>
+                    </div>
+                    <h3 class="card-title h4">Share Knowledge</h3>
+                    <p class="card-text text-muted">Help others by sharing your expertise and experience.</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4 fade-in" style="animation-delay: 0.5s;">
+            <div class="card h-100 shadow-sm hover-card">
+                <div class="card-body text-center p-4">
+                    <div class="feature-icon bg-success bg-gradient text-white rounded-circle mb-3">
+                        <i class="bi bi-people display-6"></i>
+                    </div>
+                    <h3 class="card-title h4">Connect</h3>
+                    <p class="card-text text-muted">Join discussions and connect with like-minded individuals.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<style>
+    .min-vh-75 {
+        min-height: 75vh;
+    }
+
+    .feature-icon {
+        width: 80px;
+        height: 80px;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        margin: 0 auto;
+    }
+
+    .hover-card {
+        transition: all 0.3s ease;
+    }
+
+    .hover-card:hover {
+        transform: translateY(-10px);
+        box-shadow: 0 10px 20px rgba(0,0,0,0.1) !important;
+    }
+
+    .floating {
+        animation: floating 3s ease-in-out infinite;
+    }
+
+   
+
+    .bg-gradient {
+        background-image: linear-gradient(45deg, var(--bs-primary) 0%, var(--bs-primary-hover) 100%);
+    }
+
+    .bg-warning.bg-gradient {
+        background-image: linear-gradient(45deg, #ffc107 0%, #ffb300 100%);
+    }
+
+    .bg-success.bg-gradient {
+        background-image: linear-gradient(45deg, #198754 0%, #157347 100%);
+    }
+</style>

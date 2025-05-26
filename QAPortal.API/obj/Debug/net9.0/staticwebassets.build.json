@@ -1,0 +1,12 @@
+{
+  "Version": 1,
+  "Hash": "BhmXluzoirsuuKRw9Nk7ls9pFV+Z2q/aTdy9IdxjjpE=",
+  "Source": "QAPortal.API",
+  "BasePath": "_content/QAPortal.API",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": [],
+  "Endpoints": []
+}

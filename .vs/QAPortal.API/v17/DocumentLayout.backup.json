@@ -1,0 +1,542 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\ASUS\\Desktop\\QAPortal.API-XXX\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{3214BEC4-97AA-40BE-9639-F457D92EAE66}|QAPortal.UI\\QAPortal.UI.csproj|c:\\users\\asus\\desktop\\qaportal.api-xxx\\qaportal.ui\\views\\shared\\_layoutadmin.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{3214BEC4-97AA-40BE-9639-F457D92EAE66}|QAPortal.UI\\QAPortal.UI.csproj|solutionrelative:qaportal.ui\\views\\shared\\_layoutadmin.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3214BEC4-97AA-40BE-9639-F457D92EAE66}|QAPortal.UI\\QAPortal.UI.csproj|c:\\users\\asus\\desktop\\qaportal.api-xxx\\qaportal.ui\\views\\admin\\questions.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{3214BEC4-97AA-40BE-9639-F457D92EAE66}|QAPortal.UI\\QAPortal.UI.csproj|solutionrelative:qaportal.ui\\views\\admin\\questions.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3214BEC4-97AA-40BE-9639-F457D92EAE66}|QAPortal.UI\\QAPortal.UI.csproj|c:\\users\\asus\\desktop\\qaportal.api-xxx\\qaportal.ui\\views\\admin\\users.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{3214BEC4-97AA-40BE-9639-F457D92EAE66}|QAPortal.UI\\QAPortal.UI.csproj|solutionrelative:qaportal.ui\\views\\admin\\users.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3214BEC4-97AA-40BE-9639-F457D92EAE66}|QAPortal.UI\\QAPortal.UI.csproj|c:\\users\\asus\\desktop\\qaportal.api-xxx\\qaportal.ui\\views\\home\\questions.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{3214BEC4-97AA-40BE-9639-F457D92EAE66}|QAPortal.UI\\QAPortal.UI.csproj|solutionrelative:qaportal.ui\\views\\home\\questions.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3214BEC4-97AA-40BE-9639-F457D92EAE66}|QAPortal.UI\\QAPortal.UI.csproj|c:\\users\\asus\\desktop\\qaportal.api-xxx\\qaportal.ui\\views\\home\\tags.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{3214BEC4-97AA-40BE-9639-F457D92EAE66}|QAPortal.UI\\QAPortal.UI.csproj|solutionrelative:qaportal.ui\\views\\home\\tags.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3214BEC4-97AA-40BE-9639-F457D92EAE66}|QAPortal.UI\\QAPortal.UI.csproj|c:\\users\\asus\\desktop\\qaportal.api-xxx\\qaportal.ui\\views\\account\\register.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{3214BEC4-97AA-40BE-9639-F457D92EAE66}|QAPortal.UI\\QAPortal.UI.csproj|solutionrelative:qaportal.ui\\views\\account\\register.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3214BEC4-97AA-40BE-9639-F457D92EAE66}|QAPortal.UI\\QAPortal.UI.csproj|c:\\users\\asus\\desktop\\qaportal.api-xxx\\qaportal.ui\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{3214BEC4-97AA-40BE-9639-F457D92EAE66}|QAPortal.UI\\QAPortal.UI.csproj|solutionrelative:qaportal.ui\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3214BEC4-97AA-40BE-9639-F457D92EAE66}|QAPortal.UI\\QAPortal.UI.csproj|c:\\users\\asus\\desktop\\qaportal.api-xxx\\qaportal.ui\\views\\home\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{3214BEC4-97AA-40BE-9639-F457D92EAE66}|QAPortal.UI\\QAPortal.UI.csproj|solutionrelative:qaportal.ui\\views\\home\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3214BEC4-97AA-40BE-9639-F457D92EAE66}|QAPortal.UI\\QAPortal.UI.csproj|c:\\users\\asus\\desktop\\qaportal.api-xxx\\qaportal.ui\\views\\account\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{3214BEC4-97AA-40BE-9639-F457D92EAE66}|QAPortal.UI\\QAPortal.UI.csproj|solutionrelative:qaportal.ui\\views\\account\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3214BEC4-97AA-40BE-9639-F457D92EAE66}|QAPortal.UI\\QAPortal.UI.csproj|c:\\users\\asus\\desktop\\qaportal.api-xxx\\qaportal.ui\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{3214BEC4-97AA-40BE-9639-F457D92EAE66}|QAPortal.UI\\QAPortal.UI.csproj|solutionrelative:qaportal.ui\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3214BEC4-97AA-40BE-9639-F457D92EAE66}|QAPortal.UI\\QAPortal.UI.csproj|c:\\users\\asus\\desktop\\qaportal.api-xxx\\qaportal.ui\\views\\admin\\editquestion.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{3214BEC4-97AA-40BE-9639-F457D92EAE66}|QAPortal.UI\\QAPortal.UI.csproj|solutionrelative:qaportal.ui\\views\\admin\\editquestion.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3214BEC4-97AA-40BE-9639-F457D92EAE66}|QAPortal.UI\\QAPortal.UI.csproj|c:\\users\\asus\\desktop\\qaportal.api-xxx\\qaportal.ui\\views\\admin\\createquestion.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{3214BEC4-97AA-40BE-9639-F457D92EAE66}|QAPortal.UI\\QAPortal.UI.csproj|solutionrelative:qaportal.ui\\views\\admin\\createquestion.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3214BEC4-97AA-40BE-9639-F457D92EAE66}|QAPortal.UI\\QAPortal.UI.csproj|c:\\users\\asus\\desktop\\qaportal.api-xxx\\qaportal.ui\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3214BEC4-97AA-40BE-9639-F457D92EAE66}|QAPortal.UI\\QAPortal.UI.csproj|solutionrelative:qaportal.ui\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C869E5E2-3B24-4E02-81B3-A65EBA2CB9FA}|QAPortal.API\\QAPortal.API.csproj|c:\\users\\asus\\desktop\\qaportal.api-xxx\\qaportal.api\\models\\question.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C869E5E2-3B24-4E02-81B3-A65EBA2CB9FA}|QAPortal.API\\QAPortal.API.csproj|solutionrelative:qaportal.api\\models\\question.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C869E5E2-3B24-4E02-81B3-A65EBA2CB9FA}|QAPortal.API\\QAPortal.API.csproj|c:\\users\\asus\\desktop\\qaportal.api-xxx\\qaportal.api\\models\\answer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C869E5E2-3B24-4E02-81B3-A65EBA2CB9FA}|QAPortal.API\\QAPortal.API.csproj|solutionrelative:qaportal.api\\models\\answer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C869E5E2-3B24-4E02-81B3-A65EBA2CB9FA}|QAPortal.API\\QAPortal.API.csproj|c:\\users\\asus\\desktop\\qaportal.api-xxx\\qaportal.api\\dtos\\answerdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C869E5E2-3B24-4E02-81B3-A65EBA2CB9FA}|QAPortal.API\\QAPortal.API.csproj|solutionrelative:qaportal.api\\dtos\\answerdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C869E5E2-3B24-4E02-81B3-A65EBA2CB9FA}|QAPortal.API\\QAPortal.API.csproj|c:\\users\\asus\\desktop\\qaportal.api-xxx\\qaportal.api\\controllers\\answerscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C869E5E2-3B24-4E02-81B3-A65EBA2CB9FA}|QAPortal.API\\QAPortal.API.csproj|solutionrelative:qaportal.api\\controllers\\answerscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C869E5E2-3B24-4E02-81B3-A65EBA2CB9FA}|QAPortal.API\\QAPortal.API.csproj|c:\\users\\asus\\desktop\\qaportal.api-xxx\\qaportal.api\\controllers\\questionscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C869E5E2-3B24-4E02-81B3-A65EBA2CB9FA}|QAPortal.API\\QAPortal.API.csproj|solutionrelative:qaportal.api\\controllers\\questionscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C869E5E2-3B24-4E02-81B3-A65EBA2CB9FA}|QAPortal.API\\QAPortal.API.csproj|c:\\users\\asus\\desktop\\qaportal.api-xxx\\qaportal.api\\models\\tag.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C869E5E2-3B24-4E02-81B3-A65EBA2CB9FA}|QAPortal.API\\QAPortal.API.csproj|solutionrelative:qaportal.api\\models\\tag.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C869E5E2-3B24-4E02-81B3-A65EBA2CB9FA}|QAPortal.API\\QAPortal.API.csproj|c:\\users\\asus\\desktop\\qaportal.api-xxx\\qaportal.api\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C869E5E2-3B24-4E02-81B3-A65EBA2CB9FA}|QAPortal.API\\QAPortal.API.csproj|solutionrelative:qaportal.api\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3214BEC4-97AA-40BE-9639-F457D92EAE66}|QAPortal.UI\\QAPortal.UI.csproj|c:\\users\\asus\\desktop\\qaportal.api-xxx\\qaportal.ui\\controllers\\admincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3214BEC4-97AA-40BE-9639-F457D92EAE66}|QAPortal.UI\\QAPortal.UI.csproj|solutionrelative:qaportal.ui\\controllers\\admincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C869E5E2-3B24-4E02-81B3-A65EBA2CB9FA}|QAPortal.API\\QAPortal.API.csproj|c:\\users\\asus\\desktop\\qaportal.api-xxx\\qaportal.api\\models\\applicationuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C869E5E2-3B24-4E02-81B3-A65EBA2CB9FA}|QAPortal.API\\QAPortal.API.csproj|solutionrelative:qaportal.api\\models\\applicationuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C869E5E2-3B24-4E02-81B3-A65EBA2CB9FA}|QAPortal.API\\QAPortal.API.csproj|c:\\users\\asus\\desktop\\qaportal.api-xxx\\qaportal.api\\dtos\\userdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C869E5E2-3B24-4E02-81B3-A65EBA2CB9FA}|QAPortal.API\\QAPortal.API.csproj|solutionrelative:qaportal.api\\dtos\\userdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3214BEC4-97AA-40BE-9639-F457D92EAE66}|QAPortal.UI\\QAPortal.UI.csproj|c:\\users\\asus\\desktop\\qaportal.api-xxx\\qaportal.ui\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3214BEC4-97AA-40BE-9639-F457D92EAE66}|QAPortal.UI\\QAPortal.UI.csproj|solutionrelative:qaportal.ui\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C869E5E2-3B24-4E02-81B3-A65EBA2CB9FA}|QAPortal.API\\QAPortal.API.csproj|c:\\users\\asus\\desktop\\qaportal.api-xxx\\qaportal.api\\dtos\\questiondto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C869E5E2-3B24-4E02-81B3-A65EBA2CB9FA}|QAPortal.API\\QAPortal.API.csproj|solutionrelative:qaportal.api\\dtos\\questiondto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C869E5E2-3B24-4E02-81B3-A65EBA2CB9FA}|QAPortal.API\\QAPortal.API.csproj|c:\\users\\asus\\desktop\\qaportal.api-xxx\\qaportal.api\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{C869E5E2-3B24-4E02-81B3-A65EBA2CB9FA}|QAPortal.API\\QAPortal.API.csproj|solutionrelative:qaportal.api\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C869E5E2-3B24-4E02-81B3-A65EBA2CB9FA}|QAPortal.API\\QAPortal.API.csproj|c:\\users\\asus\\desktop\\qaportal.api-xxx\\qaportal.api\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{C869E5E2-3B24-4E02-81B3-A65EBA2CB9FA}|QAPortal.API\\QAPortal.API.csproj|solutionrelative:qaportal.api\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C869E5E2-3B24-4E02-81B3-A65EBA2CB9FA}|QAPortal.API\\QAPortal.API.csproj|c:\\users\\asus\\desktop\\qaportal.api-xxx\\qaportal.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C869E5E2-3B24-4E02-81B3-A65EBA2CB9FA}|QAPortal.API\\QAPortal.API.csproj|solutionrelative:qaportal.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3214BEC4-97AA-40BE-9639-F457D92EAE66}|QAPortal.UI\\QAPortal.UI.csproj|c:\\users\\asus\\desktop\\qaportal.api-xxx\\qaportal.ui\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3214BEC4-97AA-40BE-9639-F457D92EAE66}|QAPortal.UI\\QAPortal.UI.csproj|solutionrelative:qaportal.ui\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3214BEC4-97AA-40BE-9639-F457D92EAE66}|QAPortal.UI\\QAPortal.UI.csproj|c:\\users\\asus\\desktop\\qaportal.api-xxx\\qaportal.ui\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{3214BEC4-97AA-40BE-9639-F457D92EAE66}|QAPortal.UI\\QAPortal.UI.csproj|solutionrelative:qaportal.ui\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3214BEC4-97AA-40BE-9639-F457D92EAE66}|QAPortal.UI\\QAPortal.UI.csproj|c:\\users\\asus\\desktop\\qaportal.api-xxx\\qaportal.ui\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{3214BEC4-97AA-40BE-9639-F457D92EAE66}|QAPortal.UI\\QAPortal.UI.csproj|solutionrelative:qaportal.ui\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C869E5E2-3B24-4E02-81B3-A65EBA2CB9FA}|QAPortal.API\\QAPortal.API.csproj|c:\\users\\asus\\desktop\\qaportal.api-xxx\\qaportal.api\\migrations\\20250526024454_makedescriptionnullable.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C869E5E2-3B24-4E02-81B3-A65EBA2CB9FA}|QAPortal.API\\QAPortal.API.csproj|solutionrelative:qaportal.api\\migrations\\20250526024454_makedescriptionnullable.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 7,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Questions.cshtml",
+              "DocumentMoniker": "C:\\Users\\ASUS\\Desktop\\QAPortal.API-XXX\\QAPortal.UI\\Views\\Admin\\Questions.cshtml",
+              "RelativeDocumentMoniker": "QAPortal.UI\\Views\\Admin\\Questions.cshtml",
+              "ToolTip": "C:\\Users\\ASUS\\Desktop\\QAPortal.API-XXX\\QAPortal.UI\\Views\\Admin\\Questions.cshtml",
+              "RelativeToolTip": "QAPortal.UI\\Views\\Admin\\Questions.cshtml",
+              "ViewState": "AgIAAHcAAAAAAAAAAAD4v4UAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-05-26T15:58:29.438Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "CreateQuestion.cshtml",
+              "DocumentMoniker": "C:\\Users\\ASUS\\Desktop\\QAPortal.API-XXX\\QAPortal.UI\\Views\\Admin\\CreateQuestion.cshtml",
+              "RelativeDocumentMoniker": "QAPortal.UI\\Views\\Admin\\CreateQuestion.cshtml",
+              "ToolTip": "C:\\Users\\ASUS\\Desktop\\QAPortal.API-XXX\\QAPortal.UI\\Views\\Admin\\CreateQuestion.cshtml",
+              "RelativeToolTip": "QAPortal.UI\\Views\\Admin\\CreateQuestion.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAkAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-05-26T16:08:11.767Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Login.cshtml",
+              "DocumentMoniker": "C:\\Users\\ASUS\\Desktop\\QAPortal.API-XXX\\QAPortal.UI\\Views\\Account\\Login.cshtml",
+              "RelativeDocumentMoniker": "QAPortal.UI\\Views\\Account\\Login.cshtml",
+              "ToolTip": "C:\\Users\\ASUS\\Desktop\\QAPortal.API-XXX\\QAPortal.UI\\Views\\Account\\Login.cshtml",
+              "RelativeToolTip": "QAPortal.UI\\Views\\Account\\Login.cshtml",
+              "ViewState": "AgIAAG0AAAAAAAAAAAD4v5QAAAAEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-05-26T15:37:59.003Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Details.cshtml",
+              "DocumentMoniker": "C:\\Users\\ASUS\\Desktop\\QAPortal.API-XXX\\QAPortal.UI\\Views\\Home\\Details.cshtml",
+              "RelativeDocumentMoniker": "QAPortal.UI\\Views\\Home\\Details.cshtml",
+              "ToolTip": "C:\\Users\\ASUS\\Desktop\\QAPortal.API-XXX\\QAPortal.UI\\Views\\Home\\Details.cshtml",
+              "RelativeToolTip": "QAPortal.UI\\Views\\Home\\Details.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-05-26T16:49:11.013Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Register.cshtml",
+              "DocumentMoniker": "C:\\Users\\ASUS\\Desktop\\QAPortal.API-XXX\\QAPortal.UI\\Views\\Account\\Register.cshtml",
+              "RelativeDocumentMoniker": "QAPortal.UI\\Views\\Account\\Register.cshtml",
+              "ToolTip": "C:\\Users\\ASUS\\Desktop\\QAPortal.API-XXX\\QAPortal.UI\\Views\\Account\\Register.cshtml",
+              "RelativeToolTip": "QAPortal.UI\\Views\\Account\\Register.cshtml",
+              "ViewState": "AgIAALAAAAAAAAAAAAD4v78AAAACAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-05-26T15:38:58.752Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Tags.cshtml",
+              "DocumentMoniker": "C:\\Users\\ASUS\\Desktop\\QAPortal.API-XXX\\QAPortal.UI\\Views\\Home\\Tags.cshtml",
+              "RelativeDocumentMoniker": "QAPortal.UI\\Views\\Home\\Tags.cshtml",
+              "ToolTip": "C:\\Users\\ASUS\\Desktop\\QAPortal.API-XXX\\QAPortal.UI\\Views\\Home\\Tags.cshtml",
+              "RelativeToolTip": "QAPortal.UI\\Views\\Home\\Tags.cshtml",
+              "ViewState": "AgIAAEwAAAAAAAAAAAD4v1sAAAAHAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-05-26T17:09:23.071Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Users.cshtml",
+              "DocumentMoniker": "C:\\Users\\ASUS\\Desktop\\QAPortal.API-XXX\\QAPortal.UI\\Views\\Admin\\Users.cshtml",
+              "RelativeDocumentMoniker": "QAPortal.UI\\Views\\Admin\\Users.cshtml",
+              "ToolTip": "C:\\Users\\ASUS\\Desktop\\QAPortal.API-XXX\\QAPortal.UI\\Views\\Admin\\Users.cshtml",
+              "RelativeToolTip": "QAPortal.UI\\Views\\Admin\\Users.cshtml",
+              "ViewState": "AgIAAG4AAAAAAAAAAAD4v30AAAAHAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-05-26T16:19:30.277Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "_LayoutAdmin.cshtml",
+              "DocumentMoniker": "C:\\Users\\ASUS\\Desktop\\QAPortal.API-XXX\\QAPortal.UI\\Views\\Shared\\_LayoutAdmin.cshtml",
+              "RelativeDocumentMoniker": "QAPortal.UI\\Views\\Shared\\_LayoutAdmin.cshtml",
+              "ToolTip": "C:\\Users\\ASUS\\Desktop\\QAPortal.API-XXX\\QAPortal.UI\\Views\\Shared\\_LayoutAdmin.cshtml",
+              "RelativeToolTip": "QAPortal.UI\\Views\\Shared\\_LayoutAdmin.cshtml",
+              "ViewState": "AgIAAD4AAAAAAAAAAAAYwFQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-05-26T16:11:18.66Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Questions.cshtml",
+              "DocumentMoniker": "C:\\Users\\ASUS\\Desktop\\QAPortal.API-XXX\\QAPortal.UI\\Views\\Home\\Questions.cshtml",
+              "RelativeDocumentMoniker": "QAPortal.UI\\Views\\Home\\Questions.cshtml",
+              "ToolTip": "C:\\Users\\ASUS\\Desktop\\QAPortal.API-XXX\\QAPortal.UI\\Views\\Home\\Questions.cshtml",
+              "RelativeToolTip": "QAPortal.UI\\Views\\Home\\Questions.cshtml",
+              "ViewState": "AgIAAGIAAAAAAAAAAAD4v3AAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-05-26T16:37:30.966Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\ASUS\\Desktop\\QAPortal.API-XXX\\QAPortal.UI\\Views\\Home\\Index.cshtml",
+              "RelativeDocumentMoniker": "QAPortal.UI\\Views\\Home\\Index.cshtml",
+              "ToolTip": "C:\\Users\\ASUS\\Desktop\\QAPortal.API-XXX\\QAPortal.UI\\Views\\Home\\Index.cshtml",
+              "RelativeToolTip": "QAPortal.UI\\Views\\Home\\Index.cshtml",
+              "ViewState": "AgIAAE0AAAAAAAAAAAD4v1wAAAADAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-05-26T17:49:43.987Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "HomeController.cs",
+              "DocumentMoniker": "C:\\Users\\ASUS\\Desktop\\QAPortal.API-XXX\\QAPortal.UI\\Controllers\\HomeController.cs",
+              "RelativeDocumentMoniker": "QAPortal.UI\\Controllers\\HomeController.cs",
+              "ToolTip": "C:\\Users\\ASUS\\Desktop\\QAPortal.API-XXX\\QAPortal.UI\\Controllers\\HomeController.cs",
+              "RelativeToolTip": "QAPortal.UI\\Controllers\\HomeController.cs",
+              "ViewState": "AgIAAA8AAAAAAAAAAAAAwB0AAAAWAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-26T02:51:21.549Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "Question.cs",
+              "DocumentMoniker": "C:\\Users\\ASUS\\Desktop\\QAPortal.API-XXX\\QAPortal.API\\Models\\Question.cs",
+              "RelativeDocumentMoniker": "QAPortal.API\\Models\\Question.cs",
+              "ToolTip": "C:\\Users\\ASUS\\Desktop\\QAPortal.API-XXX\\QAPortal.API\\Models\\Question.cs",
+              "RelativeToolTip": "QAPortal.API\\Models\\Question.cs",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAuwBwAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-26T15:56:25.888Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "C:\\Users\\ASUS\\Desktop\\QAPortal.API-XXX\\QAPortal.UI\\Views\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "QAPortal.UI\\Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "C:\\Users\\ASUS\\Desktop\\QAPortal.API-XXX\\QAPortal.UI\\Views\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "QAPortal.UI\\Views\\Shared\\_Layout.cshtml",
+              "ViewState": "AgIAAGkAAAAAAAAAAAAAAK8AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-05-26T17:20:41.954Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "EditQuestion.cshtml",
+              "DocumentMoniker": "C:\\Users\\ASUS\\Desktop\\QAPortal.API-XXX\\QAPortal.UI\\Views\\Admin\\EditQuestion.cshtml",
+              "RelativeDocumentMoniker": "QAPortal.UI\\Views\\Admin\\EditQuestion.cshtml",
+              "ToolTip": "C:\\Users\\ASUS\\Desktop\\QAPortal.API-XXX\\QAPortal.UI\\Views\\Admin\\EditQuestion.cshtml",
+              "RelativeToolTip": "QAPortal.UI\\Views\\Admin\\EditQuestion.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-05-26T16:07:39.46Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "AccountController.cs",
+              "DocumentMoniker": "C:\\Users\\ASUS\\Desktop\\QAPortal.API-XXX\\QAPortal.UI\\Controllers\\AccountController.cs",
+              "RelativeDocumentMoniker": "QAPortal.UI\\Controllers\\AccountController.cs",
+              "ToolTip": "C:\\Users\\ASUS\\Desktop\\QAPortal.API-XXX\\QAPortal.UI\\Controllers\\AccountController.cs",
+              "RelativeToolTip": "QAPortal.UI\\Controllers\\AccountController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-26T15:37:09.809Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "QuestionsController.cs",
+              "DocumentMoniker": "C:\\Users\\ASUS\\Desktop\\QAPortal.API-XXX\\QAPortal.API\\Controllers\\QuestionsController.cs",
+              "RelativeDocumentMoniker": "QAPortal.API\\Controllers\\QuestionsController.cs",
+              "ToolTip": "C:\\Users\\ASUS\\Desktop\\QAPortal.API-XXX\\QAPortal.API\\Controllers\\QuestionsController.cs",
+              "RelativeToolTip": "QAPortal.API\\Controllers\\QuestionsController.cs",
+              "ViewState": "AgIAAJAAAAAAAAAAAADwv6wAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-26T16:34:38.006Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "AnswersController.cs",
+              "DocumentMoniker": "C:\\Users\\ASUS\\Desktop\\QAPortal.API-XXX\\QAPortal.API\\Controllers\\AnswersController.cs",
+              "RelativeDocumentMoniker": "QAPortal.API\\Controllers\\AnswersController.cs",
+              "ToolTip": "C:\\Users\\ASUS\\Desktop\\QAPortal.API-XXX\\QAPortal.API\\Controllers\\AnswersController.cs",
+              "RelativeToolTip": "QAPortal.API\\Controllers\\AnswersController.cs",
+              "ViewState": "AgIAAHYAAAAAAAAAAADwv5IAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-26T16:34:49.174Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "AnswerDto.cs",
+              "DocumentMoniker": "C:\\Users\\ASUS\\Desktop\\QAPortal.API-XXX\\QAPortal.API\\DTOs\\AnswerDto.cs",
+              "RelativeDocumentMoniker": "QAPortal.API\\DTOs\\AnswerDto.cs",
+              "ToolTip": "C:\\Users\\ASUS\\Desktop\\QAPortal.API-XXX\\QAPortal.API\\DTOs\\AnswerDto.cs",
+              "RelativeToolTip": "QAPortal.API\\DTOs\\AnswerDto.cs",
+              "ViewState": "AgIAAAkAAAAAAAAAAAA+wB0AAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-26T16:34:57.171Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "Answer.cs",
+              "DocumentMoniker": "C:\\Users\\ASUS\\Desktop\\QAPortal.API-XXX\\QAPortal.API\\Models\\Answer.cs",
+              "RelativeDocumentMoniker": "QAPortal.API\\Models\\Answer.cs",
+              "ToolTip": "C:\\Users\\ASUS\\Desktop\\QAPortal.API-XXX\\QAPortal.API\\Models\\Answer.cs",
+              "RelativeToolTip": "QAPortal.API\\Models\\Answer.cs",
+              "ViewState": "AgIAAAQAAAAAAAAAAAAuwBgAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-26T16:35:07.057Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "UserController.cs",
+              "DocumentMoniker": "C:\\Users\\ASUS\\Desktop\\QAPortal.API-XXX\\QAPortal.API\\Controllers\\UserController.cs",
+              "RelativeDocumentMoniker": "QAPortal.API\\Controllers\\UserController.cs",
+              "ToolTip": "C:\\Users\\ASUS\\Desktop\\QAPortal.API-XXX\\QAPortal.API\\Controllers\\UserController.cs",
+              "RelativeToolTip": "QAPortal.API\\Controllers\\UserController.cs",
+              "ViewState": "AgIAAEkAAAAAAAAAAADwv2UAAAACAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-26T15:52:38.36Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "Tag.cs",
+              "DocumentMoniker": "C:\\Users\\ASUS\\Desktop\\QAPortal.API-XXX\\QAPortal.API\\Models\\Tag.cs",
+              "RelativeDocumentMoniker": "QAPortal.API\\Models\\Tag.cs",
+              "ToolTip": "C:\\Users\\ASUS\\Desktop\\QAPortal.API-XXX\\QAPortal.API\\Models\\Tag.cs",
+              "RelativeToolTip": "QAPortal.API\\Models\\Tag.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAWAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-26T02:44:12.146Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "QuestionDto.cs",
+              "DocumentMoniker": "C:\\Users\\ASUS\\Desktop\\QAPortal.API-XXX\\QAPortal.API\\DTOs\\QuestionDto.cs",
+              "RelativeDocumentMoniker": "QAPortal.API\\DTOs\\QuestionDto.cs",
+              "ToolTip": "C:\\Users\\ASUS\\Desktop\\QAPortal.API-XXX\\QAPortal.API\\DTOs\\QuestionDto.cs",
+              "RelativeToolTip": "QAPortal.API\\DTOs\\QuestionDto.cs",
+              "ViewState": "AgIAABAAAAAAAAAAAAAuwB0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-26T15:56:11.365Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "AdminController.cs",
+              "DocumentMoniker": "C:\\Users\\ASUS\\Desktop\\QAPortal.API-XXX\\QAPortal.UI\\Controllers\\AdminController.cs",
+              "RelativeDocumentMoniker": "QAPortal.UI\\Controllers\\AdminController.cs",
+              "ToolTip": "C:\\Users\\ASUS\\Desktop\\QAPortal.API-XXX\\QAPortal.UI\\Controllers\\AdminController.cs",
+              "RelativeToolTip": "QAPortal.UI\\Controllers\\AdminController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAbAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-26T15:57:34.315Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "UserDto.cs",
+              "DocumentMoniker": "C:\\Users\\ASUS\\Desktop\\QAPortal.API-XXX\\QAPortal.API\\DTOs\\UserDto.cs",
+              "RelativeDocumentMoniker": "QAPortal.API\\DTOs\\UserDto.cs",
+              "ToolTip": "C:\\Users\\ASUS\\Desktop\\QAPortal.API-XXX\\QAPortal.API\\DTOs\\UserDto.cs",
+              "RelativeToolTip": "QAPortal.API\\DTOs\\UserDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAACAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-26T16:17:49.555Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "ApplicationUser.cs",
+              "DocumentMoniker": "C:\\Users\\ASUS\\Desktop\\QAPortal.API-XXX\\QAPortal.API\\Models\\ApplicationUser.cs",
+              "RelativeDocumentMoniker": "QAPortal.API\\Models\\ApplicationUser.cs",
+              "ToolTip": "C:\\Users\\ASUS\\Desktop\\QAPortal.API-XXX\\QAPortal.API\\Models\\ApplicationUser.cs",
+              "RelativeToolTip": "QAPortal.API\\Models\\ApplicationUser.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-26T16:18:08.145Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 28,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\ASUS\\Desktop\\QAPortal.API-XXX\\QAPortal.UI\\Program.cs",
+              "RelativeDocumentMoniker": "QAPortal.UI\\Program.cs",
+              "ToolTip": "C:\\Users\\ASUS\\Desktop\\QAPortal.API-XXX\\QAPortal.UI\\Program.cs",
+              "RelativeToolTip": "QAPortal.UI\\Program.cs",
+              "ViewState": "AgIAADkAAAAAAAAAAAAAADkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-26T02:50:11.505Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 31,
+              "Title": "20250526024454_MakeDescriptionNullable.cs",
+              "DocumentMoniker": "C:\\Users\\ASUS\\Desktop\\QAPortal.API-XXX\\QAPortal.API\\Migrations\\20250526024454_MakeDescriptionNullable.cs",
+              "RelativeDocumentMoniker": "QAPortal.API\\Migrations\\20250526024454_MakeDescriptionNullable.cs",
+              "ToolTip": "C:\\Users\\ASUS\\Desktop\\QAPortal.API-XXX\\QAPortal.API\\Migrations\\20250526024454_MakeDescriptionNullable.cs",
+              "RelativeToolTip": "QAPortal.API\\Migrations\\20250526024454_MakeDescriptionNullable.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-26T02:44:54.442Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\ASUS\\Desktop\\QAPortal.API-XXX\\QAPortal.API\\appsettings.json",
+              "RelativeDocumentMoniker": "QAPortal.API\\appsettings.json",
+              "ToolTip": "C:\\Users\\ASUS\\Desktop\\QAPortal.API-XXX\\QAPortal.API\\appsettings.json",
+              "RelativeToolTip": "QAPortal.API\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-05-26T02:40:03.632Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "launchSettings.json",
+              "DocumentMoniker": "C:\\Users\\ASUS\\Desktop\\QAPortal.API-XXX\\QAPortal.API\\Properties\\launchSettings.json",
+              "RelativeDocumentMoniker": "QAPortal.API\\Properties\\launchSettings.json",
+              "ToolTip": "C:\\Users\\ASUS\\Desktop\\QAPortal.API-XXX\\QAPortal.API\\Properties\\launchSettings.json",
+              "RelativeToolTip": "QAPortal.API\\Properties\\launchSettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-05-26T03:18:01.651Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 30,
+              "Title": "launchSettings.json",
+              "DocumentMoniker": "C:\\Users\\ASUS\\Desktop\\QAPortal.API-XXX\\QAPortal.UI\\Properties\\launchSettings.json",
+              "RelativeDocumentMoniker": "QAPortal.UI\\Properties\\launchSettings.json",
+              "ToolTip": "C:\\Users\\ASUS\\Desktop\\QAPortal.API-XXX\\QAPortal.UI\\Properties\\launchSettings.json",
+              "RelativeToolTip": "QAPortal.UI\\Properties\\launchSettings.json",
+              "ViewState": "AgIAAAUAAAAAAAAAAAAUwCIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-05-26T03:18:28.354Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 27,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\ASUS\\Desktop\\QAPortal.API-XXX\\QAPortal.API\\Program.cs",
+              "RelativeDocumentMoniker": "QAPortal.API\\Program.cs",
+              "ToolTip": "C:\\Users\\ASUS\\Desktop\\QAPortal.API-XXX\\QAPortal.API\\Program.cs",
+              "RelativeToolTip": "QAPortal.API\\Program.cs",
+              "ViewState": "AgIAAIQAAAAAAAAAAAAYwKEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-26T02:38:32.825Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 29,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\ASUS\\Desktop\\QAPortal.API-XXX\\QAPortal.UI\\appsettings.json",
+              "RelativeDocumentMoniker": "QAPortal.UI\\appsettings.json",
+              "ToolTip": "C:\\Users\\ASUS\\Desktop\\QAPortal.API-XXX\\QAPortal.UI\\appsettings.json",
+              "RelativeToolTip": "QAPortal.UI\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-05-26T03:18:50.933Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

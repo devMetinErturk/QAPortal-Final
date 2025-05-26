@@ -1,0 +1,309 @@
+@{
+    ViewData["Title"] = "Questions";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="container py-4">
+    <div class="d-flex justify-content-between align-items-center mb-4">
+        <h2 class="mb-0">
+            <i class="bi bi-chat-left-text me-2"></i>Questions
+        </h2>
+        <button id="showAskFormBtn" class="btn btn-primary">
+            <i class="bi bi-plus-circle me-2"></i>Ask Question
+        </button>
+    </div>
+
+    <div id="askFormContainer" class="fade-in" style="display:none;">
+        <div class="card shadow-lg border-0 mb-4">
+            <div class="card-header bg-primary text-white py-3">
+                <h5 class="mb-0">
+                    <i class="bi bi-pencil-square me-2"></i>Ask a Question
+                </h5>
+            </div>
+            <div class="card-body p-4">
+                <form id="askQuestionForm" class="needs-validation" novalidate>
+                    <div class="mb-3">
+                        <label for="questionTitle" class="form-label">Title</label>
+                        <input type="text" class="form-control form-control-lg" id="questionTitle" 
+                               placeholder="What's your question? Be specific." required />
+                        <div class="invalid-feedback">
+                            Please provide a title for your question.
+                        </div>
+                    </div>
+                    <div class="mb-3">
+                        <label for="questionContent" class="form-label">Content</label>
+                        <textarea class="form-control" id="questionContent" rows="6" 
+                                  placeholder="Describe your question in detail. The more information you provide, the better answers you'll get." required></textarea>
+                        <div class="invalid-feedback">
+                            Please provide details for your question.
+                        </div>
+                    </div>
+                    <div class="mb-4">
+                        <label for="questionTags" class="form-label">Tags (comma separated)</label>
+                        <input type="text" class="form-control" id="questionTags" 
+                               placeholder="e.g., asp.net, c#, mvc" />
+                        <div class="form-text">Add up to 5 tags to help others find your question.</div>
+                    </div>
+                    <div class="d-flex gap-2">
+                        <button type="submit" id="submitQuestionBtn" class="btn btn-primary">
+                            <i class="bi bi-send me-2"></i>Submit Question
+                        </button>
+                        <button type="button" id="cancelAskBtn" class="btn btn-outline-secondary">
+                            <i class="bi bi-x-circle me-2"></i>Cancel
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <div class="card shadow-sm border-0">
+        <div class="card-body p-0">
+            <div class="table-responsive">
+                <table class="table table-hover mb-0" id="questionsTable">
+                    <thead class="table-light">
+                        <tr>
+                            <th class="px-4">Title</th>
+                            <th>Author</th>
+                            <th>Created</th>
+                            <th class="text-end px-4">Action</th>
+                        </tr>
+                    </thead>
+                    <tbody></tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>
+
+@section Styles {
+    <style>
+        .table > :not(caption) > * > * {
+            padding: 1rem;
+        }
+
+        .table tbody tr {
+            transition: all 0.2s ease;
+        }
+
+        .table tbody tr:hover {
+            background-color: var(--bs-primary-bg-subtle);
+            transform: translateX(5px);
+        }
+
+        .btn {
+            transition: all 0.3s ease;
+        }
+
+        .btn:hover {
+            transform: translateY(-2px);
+        }
+
+        .btn-primary {
+            box-shadow: 0 2px 4px rgba(13,110,253,.2);
+        }
+
+        .btn-primary:hover {
+            box-shadow: 0 4px 8px rgba(13,110,253,.3);
+        }
+
+        .fade-in {
+            animation: fadeIn 0.3s ease-out;
+        }
+
+        .form-control:focus {
+            border-color: var(--bs-primary);
+            box-shadow: 0 0 0 0.25rem rgba(13,110,253,.15);
+        }
+
+        .form-control::placeholder {
+            color: var(--bs-gray-500);
+        }
+
+        .table th {
+            font-weight: 600;
+            color: var(--bs-gray-700);
+        }
+
+        .card {
+            transition: all 0.3s ease;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+        }
+    </style>
+}
+
+@section Scripts {
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+        const token = localStorage.getItem('token');
+
+        $(document).ready(function () {
+            loadQuestions();
+
+            $('#showAskFormBtn').click(() => {
+                $('#askFormContainer').slideDown(300);
+                $('#showAskFormBtn').hide();
+            });
+
+            $('#cancelAskBtn').click(() => {
+                $('#askFormContainer').slideUp(300);
+                $('#showAskFormBtn').show();
+                clearForm();
+            });
+
+            $('#askQuestionForm').on('submit', function(e) {
+                e.preventDefault();
+                
+                if (!this.checkValidity()) {
+                    e.stopPropagation();
+                    $(this).addClass('was-validated');
+                    return;
+                }
+
+                const title = $('#questionTitle').val().trim();
+                const content = $('#questionContent').val().trim();
+                const tagsRaw = $('#questionTags').val().trim();
+
+                const tags = tagsRaw ? tagsRaw.split(',').map(t => t.trim()).filter(t => t.length > 0) : [];
+
+                // Show loading state
+                const submitBtn = $('#submitQuestionBtn');
+                const originalBtnText = submitBtn.html();
+                submitBtn.html('<span class="spinner-border spinner-border-sm me-2" role="status" aria-hidden="true"></span>Submitting...');
+                submitBtn.prop('disabled', true);
+
+                $.ajax({
+                    url: 'http://localhost:5000/api/Questions',
+                    method: 'POST',
+                    contentType: 'application/json',
+                    headers: {
+                        'Authorization': 'Bearer ' + token
+                    },
+                    data: JSON.stringify({
+                        title: title,
+                        content: content,
+                        tags: tags
+                    }),
+                    success: function () {
+                        // Show success message
+                        const successAlert = $('<div class="alert alert-success alert-dismissible fade show" role="alert">')
+                            .html('<i class="bi bi-check-circle-fill me-2"></i>Question added successfully!')
+                            .insertAfter('#askFormContainer');
+                        
+                        // Add close button
+                        successAlert.append(`
+                            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                        `);
+
+                        clearForm();
+                        $('#askFormContainer').slideUp(300);
+                        $('#showAskFormBtn').show();
+                        loadQuestions();
+
+                        // Remove alert after 3 seconds
+                        setTimeout(() => {
+                            successAlert.alert('close');
+                        }, 3000);
+                    },
+                    error: function (xhr) {
+                        let errorMessage = "An error occurred while adding the question.";
+                        if (xhr.status === 401) {
+                            errorMessage = "Please log in to ask a question.";
+                        }
+
+                        // Show error message
+                        const errorAlert = $('<div class="alert alert-danger alert-dismissible fade show" role="alert">')
+                            .html(`<i class="bi bi-exclamation-triangle-fill me-2"></i>${errorMessage}`)
+                            .insertAfter('#askFormContainer');
+                        
+                        // Add close button
+                        errorAlert.append(`
+                            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                        `);
+
+                        // Remove alert after 5 seconds
+                        setTimeout(() => {
+                            errorAlert.alert('close');
+                        }, 5000);
+                    },
+                    complete: function() {
+                        // Reset button state
+                        submitBtn.html(originalBtnText);
+                        submitBtn.prop('disabled', false);
+                    }
+                });
+            });
+
+            function clearForm() {
+                $('#askQuestionForm')[0].reset();
+                $('#askQuestionForm').removeClass('was-validated');
+            }
+
+            function loadQuestions() {
+                $('#questionsTable tbody').empty();
+                $.ajax({
+                    url: "http://localhost:5000/api/Questions",
+                    method: "GET",
+                    headers: {
+                        'Authorization': 'Bearer ' + token
+                    },
+                    success: function (data) {
+                        if (!data.length) {
+                            $('#questionsTable tbody').append(`
+                                <tr>
+                                    <td colspan="4" class="text-center py-5">
+                                        <div class="text-muted">
+                                            <i class="bi bi-inbox display-4 d-block mb-3"></i>
+                                            No questions yet. Be the first to ask!
+                                        </div>
+                                    </td>
+                                </tr>
+                            `);
+                            return;
+                        }
+
+                        data.forEach(function (q) {
+                            $('#questionsTable tbody').append(`
+                                <tr>
+                                    <td class="fw-medium">${q.title}</td>
+                                    <td>
+                                        <div class="d-flex align-items-center">
+                                            <i class="bi bi-person-circle me-2"></i>
+                                            ${q.userFullName}
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="text-muted">
+                                            <i class="bi bi-clock me-1"></i>
+                                            ${new Date(q.createdAt).toLocaleString()}
+                                        </div>
+                                    </td>
+                                    <td class="text-end">
+                                        <a href="/Home/Details/${q.id}" class="btn btn-sm btn-primary">
+                                            <i class="bi bi-eye me-1"></i>View
+                                        </a>
+                                    </td>
+                                </tr>
+                            `);
+                        });
+                    },
+                    error: function () {
+                        $('#questionsTable tbody').append(`
+                            <tr>
+                                <td colspan="4" class="text-center py-5">
+                                    <div class="alert alert-danger m-0">
+                                        <i class="bi bi-exclamation-triangle-fill me-2"></i>
+                                        Failed to load questions. Please try again later.
+                                    </div>
+                                </td>
+                            </tr>
+                        `);
+                    }
+                });
+            }
+        });
+    </script>
+}

@@ -1,0 +1,115 @@
+﻿@{
+    ViewData["Title"] = "Soru Detayı";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2 id="questionTitle" class="text-primary"></h2>
+
+<div id="questionDetails" class="mb-4"></div>
+
+<h4>Cevaplar</h4>
+<div id="answersList" class="mb-4"></div>
+
+<h5 class="mt-5">Yeni Cevap Ekle</h5>
+<form id="answerForm">
+    <div class="mb-3">
+        <textarea id="answerContent" class="form-control" rows="4" required></textarea>
+    </div>
+    <button type="submit" class="btn btn-success">Gönder</button>
+</form>
+
+@section Scripts {
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+        const token = localStorage.getItem('token');
+        const urlParams = new URLSearchParams(window.location.search);
+        const questionId = window.location.pathname.split('/').pop();
+
+        $(document).ready(function () {
+            loadQuestion();
+            loadAnswers();
+
+            // Cevap gönderme
+            $('#answerForm').submit(function (e) {
+                e.preventDefault();
+                const content = $('#answerContent').val().trim();
+                if (!content) return;
+
+                $.ajax({
+                    url: 'http://localhost:5000/api/Answers',
+                    method: 'POST',
+                    contentType: 'application/json',
+                    headers: {
+                        'Authorization': 'Bearer ' + token
+                    },
+                    data: JSON.stringify({
+                        content: content,
+                        questionId: parseInt(questionId)
+                    }),
+                    success: function () {
+                        $('#answerContent').val('');
+                        loadAnswers();
+                    },
+                    error: function () {
+                        alert("Cevap eklenemedi. Giriş yaptığınızdan emin olun.");
+                    }
+                });
+            });
+        });
+
+        function loadQuestion() {
+            $.ajax({
+                url: `http://localhost:5000/api/Questions/${questionId}`,
+                method: 'GET',
+                headers: {
+                    'Authorization': 'Bearer ' + token
+                },
+                success: function (q) {
+                    $('#questionTitle').text(q.title);
+                    $('#questionDetails').html(`
+                        <p><strong>Yazar:</strong> ${q.userFullName}</p>
+                        <p><strong>Tarih:</strong> ${new Date(q.createdAt).toLocaleString()}</p>
+                        <p>${q.content}</p>
+                        ${q.tags && q.tags.length ? `<p><strong>Etiketler:</strong> ${q.tags.map(t => `<span class="badge bg-secondary me-1">${t}</span>`).join('')}</p>` : ''}
+                    `);
+                },
+                error: function () {
+                    $('#questionDetails').html('<div class="alert alert-danger">Soru yüklenemedi.</div>');
+                }
+            });
+        }
+
+        function loadAnswers() {
+            $.ajax({
+                url: `http://localhost:5000/api/Answers/question/${questionId}`,
+                method: 'GET',
+                headers: {
+                    'Authorization': 'Bearer ' + token
+                },
+                success: function (data) {
+                    if (!data.length) {
+                        $('#answersList').html('<p>Henüz cevap yok.</p>');
+                        return;
+                    }
+
+                    const html = data.map(a => `
+                        <div class="card mb-3">
+                            <div class="card-body">
+                                <p>${a.content}</p>
+                                <small class="text-muted">
+                                    ${a.userFullName} - ${new Date(a.createdAt).toLocaleString()}
+                                    ${a.isAccepted ? '<span class="badge bg-success ms-2">✔ Kabul Edildi</span>' : ''}
+                                </small>
+                            </div>
+                        </div>
+                    `).join('');
+
+                    $('#answersList').html(html);
+                },
+                error: function () {
+                    $('#answersList').html('<div class="alert alert-danger">Cevaplar alınamadı.</div>');
+                }
+            });
+        }
+    </script>
+}
